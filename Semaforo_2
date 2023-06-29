@@ -1,0 +1,15 @@
+#include "Semaforo.h"
+Semaforo misemaforo1(2,3,4,12); 
+Semaforo misemaforo2(8,9,10,12); 
+void setup() { 
+} 
+void loop() { 
+  misemaforo1.Rojo(); 
+  delay(500);
+  misemaforo2.Verde(); 
+  delay(3000); 
+  misemaforo2.Rojo(); 
+  delay(500); 
+  misemaforo1.Verde(); 
+  delay(3000); 
+}
